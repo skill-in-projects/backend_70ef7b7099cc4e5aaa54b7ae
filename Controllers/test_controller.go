@@ -35,6 +35,7 @@ func (tc *TestController) GetAll(w http.ResponseWriter, r *http.Request) {
         return
     }
 
+
     
     rows, err := tc.DB.Query(`SELECT "Id", "Name" FROM "TestProjects" ORDER BY "Id"`)
     if err != nil {
